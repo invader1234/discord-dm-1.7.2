@@ -12,12 +12,12 @@ Having issues with the bot lately? Join our [Discord Server][discord] where we c
 
 ## Screenshots
 
-<div align="left"><img src="assets/--help.png"></div>
-<div align="center"><img src="assets/--send.png"></div>
-<div align="right"><img src="assets/--latency.png"></div>
-<div align="left"><img src="assets/--latency_bad.png"></div>
-<div align="left"><img src="assets/--dmss.png"></div>
-<div align="left"><img src="assets/--dm.png"></div>
+<div align="left"><img src="assets/ss_one.PNG"></div>
+<div align="center"><img src="assets/ss_two.PNG"></div>
+<div align="right"><img src="assets/ss_three.PNG"></div>
+<div align="left"><img src="assets/ss_four.PNG"></div>
+<div align="left"><img src="assets/ss_five.PNG"></div>
+<div align="left"><img src="assets/ss_six.PNG"></div>
 
 ---
 
