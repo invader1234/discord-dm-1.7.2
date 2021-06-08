@@ -4,8 +4,14 @@
 - python 3.9.5
 - asyncio 3.4.3
 
-This bot 
+#### Commands
+- `send <message>` - Sends the message to all the members' DMs.
+- `dm <member> <message>` - Sends the messsage to the mentioned member's DMs.
+- `help <optional-command-name>` - Displays the available commands, you can provide a command name with help to get more info on the command
+- `latency` - Displays the latency / ping
 
+Note: The bot cannot DM **bots**, **the members who either have their DMs turned off** or **the members who have blocked the bot**.
+  
 ### Support
 
 Having issues with the bot lately? Join our [Discord Server][discord] where we can help figure out your issue. If you have a major bug to report, it would be great if you can an [issue here](https://github.com/invader1234/discord-dm-1.7.2/issues).
