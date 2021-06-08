@@ -6,8 +6,7 @@
 
 ### Installation
 
-Tutorial On YT
-
+Tutorial uploaded in YouTube, watch it by clicking [here][youtube_tutorial].
 
 ### Description
 
@@ -63,13 +62,14 @@ Having issues with the bot lately? Join the [Discord Server][discord] where we c
 - [more videos...](https://youtube.com/invader6)
 
 
-
-[website]: https://sites.google.com/view/invaderop/home
-[discord]: https://discord.gg/CwVJDCH
-[youtube]: https://www.youtube.com/Invader6
-
 ### Disclaimer
 > This is tool was made for educational purposes and proof of concepts. I'm not accountable for any unlawful, unprecedented action and any violation of ToS administered by a third party.
 
 
 Made with ❤️ and Python!
+
+
+[website]: https://sites.google.com/view/invaderop/home
+[discord]: https://discord.gg/CwVJDCH
+[youtube]: https://www.youtube.com/Invader6
+[youtube_tutorial]: https://youtube.com/watch?v=
