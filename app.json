@@ -1,0 +1,35 @@
+{
+  "name": "Discord-DMBot",
+  "description": "A Simple Discord DM Bot built on discord.py",
+  "repository": "https://github.com/invader1234/discord-dm-1.7.2",
+  "logo": "https://github.com/invader1234/discord-dm-1.7.2/blob/main/assets/logo.png",
+  "keywords": ["discord", "python", "youtube", "dm", "bot"],
+  "image": "heroku/python",
+  "buildpacks": [
+      {
+          "url": "heroku/python"
+      }
+  ],
+"config.json": {
+  "prefix": {
+    "description": "The Prefix For The Discord Bot",
+    "required": "true"
+  },      
+  "token": {
+    "description": "The Token For The Discord Bot(https://discord.com/developers/applications)",
+    "required": "true"
+  },
+  "delay": {
+    "description": "Delay Between DMs",
+    "required": "true"
+  },
+  "delay": {
+    "description": "The Discord Bot ClientSecret",
+    "required": "true"
+  },
+  "log_dms": {
+    "description": "Logging Of Dms",
+    "required" : "true"
+  }
+}
+}
