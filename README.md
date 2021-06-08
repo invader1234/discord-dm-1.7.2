@@ -12,6 +12,8 @@
 
 Note: The bot cannot DM **bots**, **the members who either have their DMs turned off** or **the members who have blocked the bot**.
   
+###### haha test
+  
 ### Support
 
 Having issues with the bot lately? Join our [Discord Server][discord] where we can help figure out your issue. If you have a major bug to report, it would be great if you can an [issue here](https://github.com/invader1234/discord-dm-1.7.2/issues).
