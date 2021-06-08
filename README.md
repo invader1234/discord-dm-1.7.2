@@ -4,6 +4,11 @@
 - python 3.9.5
 - asyncio 3.4.3
 
+### Installation
+
+Tutorial On YT
+
+
 ### Description
 
 A Bot which messages everyone in a Discord Server, if the member has DM's off or they have blocked the bot, they cannot be messaged
