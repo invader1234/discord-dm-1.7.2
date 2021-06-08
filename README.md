@@ -14,7 +14,7 @@ A Bot which messages everyone in a Discord Server, if the member has DM's off or
 
 The Server Members Intent must be turned on,
 
-HOW? go to `Dev Portal > Bot > Privileged Gateway Intents` and toggle `Server Members Intent`, refer above image.
+HOW? go to `Discord Developer Portal > Bot > Privileged Gateway Intents` and toggle `Server Members Intent`, refer above image.
 
 ***
 
