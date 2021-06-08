@@ -31,7 +31,7 @@ Having issues with the bot lately? Join our [Discord Server][discord] where we c
 - [Welcome + Leave Message Bot | DBM SERIES E1](https://youtu.be/gS8Ncj0A-jA)
 - [more videos...](https://youtube.com/invader6)
 
----
+
 
 [website]: https://sites.google.com/view/invaderop/home
 [discord]: https://discord.gg/CwVJDCH
