@@ -4,6 +4,10 @@
 - python 3.9.5
 - asyncio 3.4.3
 
+### Description
+
+Bot which messages everyone in a Discord server (If user has DM's off they cannot be messaged).
+
 #### Commands
 - `send <message>` Sends the message to all the members' DMs.
 - `dm <member> <message>` Sends the messsage to the mentioned member's DMs.
