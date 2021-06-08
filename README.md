@@ -5,14 +5,13 @@
 - asyncio 3.4.3
 
 #### Commands
-- `send <message>` - Sends the message to all the members' DMs.
+- `send <message>` - ###### Sends the message to all the members' DMs.
 - `dm <member> <message>` - Sends the messsage to the mentioned member's DMs.
 - `help <optional-command-name>` - Displays the available commands, you can provide a command name with help to get more info on the command
 - `latency` - Displays the latency / ping
 
 Note: The bot cannot DM **bots**, **the members who either have their DMs turned off** or **the members who have blocked the bot**.
   
-###### haha test
   
 ### Support
 
