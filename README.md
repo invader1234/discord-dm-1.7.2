@@ -8,6 +8,10 @@
 
 A Bot which messages everyone in a Discord Server, if the member has DM's off or they have blocked the bot, they cannot be messaged
 
+### **PLS NOTE : BOT WILL JUST CRASH IF MEMBERS INTENT IS NOT ENABLED : ** 
+
+<div align="center"><img src="assets/memberintent.png"></div>
+
 #### Commands
 - `send <message>` Sends the message to all the members' DMs.
 - `dm <member> <message>` Sends the messsage to the mentioned member's DMs.
