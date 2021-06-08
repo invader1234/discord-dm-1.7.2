@@ -6,7 +6,7 @@
 
 ### Description
 
-Bot which messages everyone in a Discord server (If user has DM's off they cannot be messaged).
+A Bot which messages everyone in a Discord Server, if the member has DM's off or they have blocked the bot, they cannot be messaged
 
 #### Commands
 - `send <message>` Sends the message to all the members' DMs.
