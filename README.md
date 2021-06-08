@@ -31,9 +31,8 @@ add here
 - [\[DISCORD\] Login To A Bot's Account](https://www.youtube.com/watch?v=Z-S5SvgbmrM)
 - [Fun & Anti Raid Bot | DBM Series E2](https://youtu.be/Cqaxt5GTfuo)
 - [Welcome + Leave Message Bot | DBM SERIES E1](https://youtu.be/gS8Ncj0A-jA)
-- 
 
-➡️ [more videos...](https://youtube.com/invader6)
+➡ [more videos...](https://youtube.com/invader6)
 
 ---
 
