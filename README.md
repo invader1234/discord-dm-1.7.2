@@ -13,7 +13,7 @@
 Note: The bot cannot DM **_bots_**, **_the members who either have their DMs turned off_** or **_the members who have blocked the bot_**.
 
 #### Features
-- You can turn off the bot logging after each DM in the command `send`, by setting the **_log_dms_** to **_off_** or **_disabled_** in **_config.json_**
+- You can turn off the bot logging after each DM in the command `send`, by setting the **_`log_dms`_** to **_`off`_** or **_`disabled`_** in **_`config.json`_**
 
 ### Support
 
