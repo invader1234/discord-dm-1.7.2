@@ -7,7 +7,8 @@
 * * * * * * * * * * * * * * * """
 
 # Ik most of you guys will just remove the credits stuff. Well, you're free to do so, idec anymore xd.
-# If anyone gets any error or anything unusual, join the discord server or add me IПVΛDΣЯ#1195, we'll figure it out.
+# If anyone gets any error or anything, join the discord server or add me IПVΛDΣЯ#1195, we'll figure it out.
+# Discord server link - idk check description on yt or smth.
 # Enjoy <3
 # -invader
 
@@ -15,27 +16,27 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import MemberConverter
-import json
 import asyncio
 import os
+from dotenv import load_dotenv
 import sys
 
 # Loading config
-with open(os.path.join(sys.path[0], "config.json"), "r") as f:
-	config = json.load(f)
+load_dotenv()
+config = os.environ
 token = config["token"]
 prefix = config["prefix"]
-delay = config["delay"]
+delay = int(config["delay"])
 log_dms = config["log_dms"]
 
-# Bot Instance(s) & Settings
+# Bot Instance
 intents = discord.Intents.default()
 intents.members = True
 client = commands.Bot(
 	command_prefix=prefix,
 	case_insensitive=True, # Remove this line to make your bot command sensitive
 	intents=intents)
-client.remove_command("help") # Coz default help sucks
+client.remove_command("help")
 
 # Events
 @client.event
@@ -115,11 +116,13 @@ async def dm(ctx, user:MemberConverter=None, *, args=None):
 @client.command(aliases=["ping","ltc"]) # You can add more aliases here
 async def latency(ctx):
 	if int(round(client.latency * 1000)) <= 50:
-		color=0x000000
+		color=0x00FFFF
 	elif int(round(client.latency * 1000)) <= 100:
 		color=0x00FF00
+	elif int(round(client.latency * 1000)) <= 200:
+		color=0xFFFF00
 	elif int(round(client.latency * 1000)) <= 300:
-		color=0x00FFFF
+		color=0xFFFF00
 	else:
 		color=0xFF0000
 	if ctx.message.content.lower().startswith(f"{client.command_prefix}latency"):
@@ -137,9 +140,11 @@ async def help(ctx, command_name:str=None):
 		xd = discord.Embed(title=f"{client.user.name}", description="", color=0x00FFFF)
 		xd.add_field(name="Send", value=f"DMs all members with a delay\nUsage : `{client.command_prefix}send <message>`", inline=False)
 		xd.add_field(name="DM", value=f"DMs specific member\nUsage : `{client.command_prefix}dm <user> <message>`", inline=False)
+		# xd.add_field(name="\u200b", value="\u200b", inline=False)
 		xd.add_field(name="Latency", value=f"Displays the latency/ping of the bot in ms\nUsage : `{client.command_prefix}latency`", inline=False)
 		xd.add_field(name="Help", value=f"Shows all available commands\nUsage : `{client.command_prefix}help`", inline=False)
 		xd.add_field(value=f"You can do `{client.command_prefix}help <command-name>` for more info on command", name="More Info", inline=False)
+		# xd.add_field(name="\u200b", value="\u200b", inline=False)
 		xd.set_footer(text="Made by IПVΛDΣЯ <3", icon_url="https://cdn.discordapp.com/avatars/559227438224375828/95f57511cebe80102e73a50eb892506e.webp?size=1024")
 		await ctx.send(embed=xd)
 		return
@@ -153,7 +158,7 @@ async def help(ctx, command_name:str=None):
 				send_aliases_str += f" `{element}`"
 		xdd = discord.Embed(
 			title="Send - Help",
-			description=f"DMs the members in the server with a delay (changeable)\nYou can change ***delay*** in ***config.json***\nYou can stop the ***bot's logging after each DM*** in ***config.json***\n`(By setting log_dms to \"off\" or \"disabled\")`\nUsage : `{client.command_prefix}send <message>`\nAliases :{send_aliases_str}",
+			description=f"DMs the members in the server with a delay (changeable)\nYou can change ***delay*** in ***.env***\nYou can stop the ***bot's logging after each DM*** in ***.env***\n`(By setting log_dms to \"off\" or \"disabled\")`\nUsage : `{client.command_prefix}send <message>`\nAliases :{send_aliases_str}",
 			color=0x00FF00)
 	elif command_name.strip().lower() == "dm":
 		dm_aliases = commands.Bot.get_command(client, "dm").aliases
@@ -203,5 +208,5 @@ async def resolve(ctx, error):
 		await ctx.send("Please Mention/Enter A Valid Member")
 		return
 
-# Run Bot - duh!
+# Run Bot
 client.run(token)
