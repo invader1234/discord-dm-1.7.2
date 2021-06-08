@@ -4,7 +4,7 @@
 - python 3.9.5
 - asyncio 3.4.3
 
-## [Support][discord]
+## Support
 
 Having issues with the bot lately? Join our [Discord Server][discord] where we can help figure out your issue. If you have a major bug to report, it would be great if you can an [issue here](https://github.com/invader1234/discord-dm-1.7.2/issues).
 
@@ -17,7 +17,6 @@ Having issues with the bot lately? Join our [Discord Server][discord] where we c
 ---
 
 ## Contact me:
-
 [<img align="left" alt="Invader" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 [<img align="left" alt="Invader | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="Invader | Discord" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/discord.svg" />][discord]
