@@ -29,20 +29,19 @@ prefix = config["prefix"]
 delay = int(config["delay"])
 log_dms = config["log_dms"]
 
-# Bot Instance
+# Bot Instance(s) & Settings
 intents = discord.Intents.default()
 intents.members = True
 client = commands.Bot(
 	command_prefix=prefix,
 	case_insensitive=True, # Remove this line to make your bot command sensitive
 	intents=intents)
-client.remove_command("help")
+client.remove_command("help") # Coz default help sucks
 
 # Events
 @client.event
 async def on_ready():
 	print(f"Logged in as {client.user.name}")
-
 # Commands
 @client.command(aliases=["dmall"]) # You can add more aliases here
 async def send(ctx, *, args:str=None):
@@ -93,10 +92,8 @@ async def send(ctx, *, args:str=None):
 					except commands.CommandInvokeError:
 						member_count -= 1
 						pass
-
 			await ctx.send(f"DM sent to {member_count} members :white_check_mark:")
 			return
-
 @client.command(aliases=["idm"]) # You can add more aliases here
 async def dm(ctx, user:MemberConverter=None, *, args=None):
 	while args != None and args != "" and not args.isspace():
@@ -112,17 +109,14 @@ async def dm(ctx, user:MemberConverter=None, *, args=None):
 		return
 	await ctx.send(f"Please enter a message with the command\nUsage : `{client.command_prefix}dm <member> <message>`")
 	return
-
 @client.command(aliases=["ping","ltc"]) # You can add more aliases here
 async def latency(ctx):
 	if int(round(client.latency * 1000)) <= 50:
-		color=0x00FFFF
+		color=0x000000
 	elif int(round(client.latency * 1000)) <= 100:
 		color=0x00FF00
-	elif int(round(client.latency * 1000)) <= 200:
-		color=0xFFFF00
 	elif int(round(client.latency * 1000)) <= 300:
-		color=0xFFFF00
+		color=0x00FFFF
 	else:
 		color=0xFF0000
 	if ctx.message.content.lower().startswith(f"{client.command_prefix}latency"):
@@ -133,18 +127,15 @@ async def latency(ctx):
 		title="Latency"
 	hehe = discord.Embed(title=title,description=f"Latency : {str(round(client.latency * 1000))}ms", color=color)
 	await ctx.send(embed=hehe)
-
 @client.command(aliases=["helpme","how"])
 async def help(ctx, command_name:str=None):
 	while command_name == None or command_name.isspace() or command_name == "":
 		xd = discord.Embed(title=f"{client.user.name}", description="", color=0x00FFFF)
 		xd.add_field(name="Send", value=f"DMs all members with a delay\nUsage : `{client.command_prefix}send <message>`", inline=False)
 		xd.add_field(name="DM", value=f"DMs specific member\nUsage : `{client.command_prefix}dm <user> <message>`", inline=False)
-		# xd.add_field(name="\u200b", value="\u200b", inline=False)
 		xd.add_field(name="Latency", value=f"Displays the latency/ping of the bot in ms\nUsage : `{client.command_prefix}latency`", inline=False)
 		xd.add_field(name="Help", value=f"Shows all available commands\nUsage : `{client.command_prefix}help`", inline=False)
 		xd.add_field(value=f"You can do `{client.command_prefix}help <command-name>` for more info on command", name="More Info", inline=False)
-		# xd.add_field(name="\u200b", value="\u200b", inline=False)
 		xd.set_footer(text="Made by IПVΛDΣЯ <3", icon_url="https://cdn.discordapp.com/avatars/559227438224375828/95f57511cebe80102e73a50eb892506e.webp?size=1024")
 		await ctx.send(embed=xd)
 		return
@@ -158,7 +149,7 @@ async def help(ctx, command_name:str=None):
 				send_aliases_str += f" `{element}`"
 		xdd = discord.Embed(
 			title="Send - Help",
-			description=f"DMs the members in the server with a delay (changeable)\nYou can change ***delay*** in ***.env***\nYou can stop the ***bot's logging after each DM*** in ***.env***\n`(By setting log_dms to \"off\" or \"disabled\")`\nUsage : `{client.command_prefix}send <message>`\nAliases :{send_aliases_str}",
+			description=f"DMs the members in the server with a delay (changeable)\nYou can change ***.env*** in ***config.json***\nYou can stop the ***bot's logging after each DM*** in ***.env***\n`(By setting log_dms to \"off\" or \"disabled\")`\nUsage : `{client.command_prefix}send <message>`\nAliases :{send_aliases_str}",
 			color=0x00FF00)
 	elif command_name.strip().lower() == "dm":
 		dm_aliases = commands.Bot.get_command(client, "dm").aliases
@@ -200,7 +191,6 @@ async def help(ctx, command_name:str=None):
 		xdd = discord.Embed(name="Invalid Command", description=f"No command found matching \"{command_name.strip()}\"", color=0xFF0000)
 	xdd.set_footer(text="Made By IПVΛDΣЯ <3", icon_url="https://cdn.discordapp.com/avatars/559227438224375828/95f57511cebe80102e73a50eb892506e.webp?size=1024")
 	await ctx.send(embed=xdd)
-
 # Catch MemberConveter Error
 @dm.error
 async def resolve(ctx, error):
@@ -208,5 +198,5 @@ async def resolve(ctx, error):
 		await ctx.send("Please Mention/Enter A Valid Member")
 		return
 
-# Run Bot
+# Run Bot - duh!
 client.run(token)
