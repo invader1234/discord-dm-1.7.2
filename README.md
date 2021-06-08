@@ -24,7 +24,7 @@ Having issues with the bot lately? Join our [Discord Server][discord] where we c
 
 
 
-## Latest YouTube Videos
+### Latest YouTube Videos
 
 - [\[DISCORD\] Login To A Bot's Account](https://www.youtube.com/watch?v=Z-S5SvgbmrM)
 - [Fun & Anti Raid Bot | DBM Series E2](https://youtu.be/Cqaxt5GTfuo)
