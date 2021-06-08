@@ -47,3 +47,6 @@ Having issues with the bot lately? Join the [Discord Server][discord] where we c
 [website]: https://sites.google.com/view/invaderop/home
 [discord]: https://discord.gg/CwVJDCH
 [youtube]: https://www.youtube.com/Invader6
+
+
+Made with ❤️ and Python!
