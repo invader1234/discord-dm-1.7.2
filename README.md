@@ -8,13 +8,12 @@
 
 Having issues with the bot lately? Join our [Discord Server][discord] where we can help figure out your issue. If you have a major bug to report, it would be great if you can an [issue here](https://github.com/invader1234/discord-dm-1.7.2/issues).
 
----
+
 
 ## Screenshots
 
 <div align="center"><img src="assets/haha.png"></div>
 
----
 
 ## Contact me:
 [<img align="left" alt="Invader" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
@@ -23,7 +22,7 @@ Having issues with the bot lately? Join our [Discord Server][discord] where we c
 
 </br>
 
----
+
 
 ## Latest YouTube Videos
 
