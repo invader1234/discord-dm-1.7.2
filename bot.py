@@ -137,11 +137,9 @@ async def help(ctx, command_name:str=None):
 		xd = discord.Embed(title=f"{client.user.name}", description="", color=0x00FFFF)
 		xd.add_field(name="Send", value=f"DMs all members with a delay\nUsage : `{client.command_prefix}send <message>`", inline=False)
 		xd.add_field(name="DM", value=f"DMs specific member\nUsage : `{client.command_prefix}dm <user> <message>`", inline=False)
-		# xd.add_field(name="\u200b", value="\u200b", inline=False)
 		xd.add_field(name="Latency", value=f"Displays the latency/ping of the bot in ms\nUsage : `{client.command_prefix}latency`", inline=False)
 		xd.add_field(name="Help", value=f"Shows all available commands\nUsage : `{client.command_prefix}help`", inline=False)
 		xd.add_field(value=f"You can do `{client.command_prefix}help <command-name>` for more info on command", name="More Info", inline=False)
-		# xd.add_field(name="\u200b", value="\u200b", inline=False)
 		xd.set_footer(text="Made by IПVΛDΣЯ <3", icon_url="https://cdn.discordapp.com/avatars/559227438224375828/95f57511cebe80102e73a50eb892506e.webp?size=1024")
 		await ctx.send(embed=xd)
 		return
