@@ -16,6 +16,8 @@ The Server Members Intent must be turned on,
 
 HOW? go to `Dev Portal > Bot > Privileged Gateway Intents` and toggle `Server Members Intent`, refer above image.
 
+***
+
 #### Commands
 - `send <message>` Sends the message to all the members' DMs.
 - `dm <member> <message>` Sends the messsage to the mentioned member's DMs.
