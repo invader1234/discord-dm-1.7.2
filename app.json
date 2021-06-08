@@ -9,27 +9,6 @@
       {
           "url": "heroku/python"
       }
-  ],
-"config.json": {
-  "prefix": {
-    "description": "The Prefix For The Discord Bot",
-    "required": "true"
-  },      
-  "token": {
-    "description": "The Token For The Discord Bot(https://discord.com/developers/applications)",
-    "required": "true"
-  },
-  "delay": {
-    "description": "Delay Between DMs",
-    "required": "true"
-  },
-  "delay": {
-    "description": "The Discord Bot ClientSecret",
-    "required": "true"
-  },
-  "log_dms": {
-    "description": "Logging Of Dms",
-    "required" : "true"
-  }
+  ]
 }
 }
