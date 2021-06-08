@@ -10,7 +10,7 @@ A Bot which messages everyone in a Discord Server, if the member has DM's off or
 
 ### PLS NOTE : BOT WILL JUST CRASH IF MEMBERS INTENT IS NOT ENABLED
 
-<div align="center"><img src="assets/memberintent.png"></div>
+<div align="center"><img src="assets/membersintent.PNG"></div>
 
 #### Commands
 - `send <message>` Sends the message to all the members' DMs.
