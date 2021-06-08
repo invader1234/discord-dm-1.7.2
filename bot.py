@@ -7,8 +7,7 @@
 * * * * * * * * * * * * * * * """
 
 # Ik most of you guys will just remove the credits stuff. Well, you're free to do so, idec anymore xd.
-# If anyone gets any error or anything, join the discord server or add me IПVΛDΣЯ#1195, we'll figure it out.
-# Discord server link - idk check description on yt or smth.
+# If anyone gets any error or anything unusual, join the discord server or add me IПVΛDΣЯ#1195, we'll figure it out.
 # Enjoy <3
 # -invader
 
@@ -16,17 +15,17 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import MemberConverter
+import json
 import asyncio
 import os
-from dotenv import load_dotenv
 import sys
 
 # Loading config
-load_dotenv()
-config = os.environ
+with open(os.path.join(sys.path[0], "config.json"), "r") as f:
+	config = json.load(f)
 token = config["token"]
 prefix = config["prefix"]
-delay = int(config["delay"])
+delay = config["delay"]
 log_dms = config["log_dms"]
 
 # Bot Instance(s) & Settings
@@ -42,6 +41,7 @@ client.remove_command("help") # Coz default help sucks
 @client.event
 async def on_ready():
 	print(f"Logged in as {client.user.name}")
+
 # Commands
 @client.command(aliases=["dmall"]) # You can add more aliases here
 async def send(ctx, *, args:str=None):
@@ -92,8 +92,10 @@ async def send(ctx, *, args:str=None):
 					except commands.CommandInvokeError:
 						member_count -= 1
 						pass
+
 			await ctx.send(f"DM sent to {member_count} members :white_check_mark:")
 			return
+
 @client.command(aliases=["idm"]) # You can add more aliases here
 async def dm(ctx, user:MemberConverter=None, *, args=None):
 	while args != None and args != "" and not args.isspace():
@@ -109,6 +111,7 @@ async def dm(ctx, user:MemberConverter=None, *, args=None):
 		return
 	await ctx.send(f"Please enter a message with the command\nUsage : `{client.command_prefix}dm <member> <message>`")
 	return
+
 @client.command(aliases=["ping","ltc"]) # You can add more aliases here
 async def latency(ctx):
 	if int(round(client.latency * 1000)) <= 50:
@@ -127,6 +130,7 @@ async def latency(ctx):
 		title="Latency"
 	hehe = discord.Embed(title=title,description=f"Latency : {str(round(client.latency * 1000))}ms", color=color)
 	await ctx.send(embed=hehe)
+
 @client.command(aliases=["helpme","how"])
 async def help(ctx, command_name:str=None):
 	while command_name == None or command_name.isspace() or command_name == "":
@@ -149,7 +153,7 @@ async def help(ctx, command_name:str=None):
 				send_aliases_str += f" `{element}`"
 		xdd = discord.Embed(
 			title="Send - Help",
-			description=f"DMs the members in the server with a delay (changeable)\nYou can change ***.env*** in ***config.json***\nYou can stop the ***bot's logging after each DM*** in ***.env***\n`(By setting log_dms to \"off\" or \"disabled\")`\nUsage : `{client.command_prefix}send <message>`\nAliases :{send_aliases_str}",
+			description=f"DMs the members in the server with a delay (changeable)\nYou can change ***delay*** in ***config.json***\nYou can stop the ***bot's logging after each DM*** in ***config.json***\n`(By setting log_dms to \"off\" or \"disabled\")`\nUsage : `{client.command_prefix}send <message>`\nAliases :{send_aliases_str}",
 			color=0x00FF00)
 	elif command_name.strip().lower() == "dm":
 		dm_aliases = commands.Bot.get_command(client, "dm").aliases
@@ -191,6 +195,7 @@ async def help(ctx, command_name:str=None):
 		xdd = discord.Embed(name="Invalid Command", description=f"No command found matching \"{command_name.strip()}\"", color=0xFF0000)
 	xdd.set_footer(text="Made By IПVΛDΣЯ <3", icon_url="https://cdn.discordapp.com/avatars/559227438224375828/95f57511cebe80102e73a50eb892506e.webp?size=1024")
 	await ctx.send(embed=xdd)
+
 # Catch MemberConveter Error
 @dm.error
 async def resolve(ctx, error):
