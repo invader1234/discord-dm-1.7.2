@@ -8,7 +8,7 @@
 
 A Bot which messages everyone in a Discord Server, if the member has DM's off or they have blocked the bot, they cannot be messaged
 
-### **PLS NOTE : BOT WILL JUST CRASH IF MEMBERS INTENT IS NOT ENABLED : ** 
+### PLS NOTE : BOT WILL JUST CRASH IF MEMBERS INTENT IS NOT ENABLED
 
 <div align="center"><img src="assets/memberintent.png"></div>
 
