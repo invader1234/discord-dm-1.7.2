@@ -1,4 +1,4 @@
-### Discord DM Bot 
+# Discord DM Bot 
 
 - discord.py 1.7.2
 - python 3.9.5
@@ -12,6 +12,8 @@
 
 Note: The bot cannot DM **_bots_**, **_the members who either have their DMs turned off_** or **_the members who have blocked the bot_**.
 
+#### Features
+- You can turn off the bot logging after each DM in the command `send`, by setting the `log_dms` to `off` or `disabled` in `config.json`
 
 ### Support
 
