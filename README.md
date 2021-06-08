@@ -12,7 +12,7 @@ Having issues with the bot lately? Join our [Discord Server][discord] where we c
 
 ## Screenshots
 
-<div align="center"><img src="assets/screenshot.PNG"></div>
+<div align="center"><img src="assets/collage.png"></div>
 
 ---
 
