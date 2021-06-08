@@ -10,7 +10,7 @@
 - `help <optional-command-name>` Displays the available commands, you can provide a command name to get more info on the command
 - `latency` Displays the latency / ping
 
-Note: The bot cannot DM **bots**, **the members who either have their DMs turned off** or **the members who have blocked the bot**.
+Note: The bot cannot DM **_bots_**, **_the members who either have their DMs turned off** or **the members who have blocked the bot**.
 
 
 ### Support
