@@ -4,6 +4,8 @@
 - python 3.9.5
 - asyncio 3.4.3
 
+This bot 
+
 ### Support
 
 Having issues with the bot lately? Join our [Discord Server][discord] where we can help figure out your issue. If you have a major bug to report, it would be great if you can an [issue here](https://github.com/invader1234/discord-dm-1.7.2/issues).
