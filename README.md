@@ -7,7 +7,7 @@
 ### Installation
 
 #### Cloud Host
-- Tutorial uploaded in YouTube, watch it by clicking [here][youtube_tutorial].
+- Tutorial uploaded in YouTube, watch it by clicking [here][youtube_tutorial]. (upload pending)
 
 #### Local Host - Windows
 - Install [Python 3.9][python_link]
