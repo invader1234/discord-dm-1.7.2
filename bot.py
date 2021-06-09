@@ -27,6 +27,18 @@ token = config["token"]
 prefix = config["prefix"]
 delay = int(config["delay"])
 log_dms = config["log_dms"]
+if len(token) != 59:
+	print("[ERROR] Invalid Token Passed")
+	exit()
+elif prefix.isspace() or prefix == "":
+	print("[ERROR] Please Enter A Valid Token")
+	exit()
+elif delay < 0 or delay > 9:
+	print("[ERROR] Please Enter A Value More Between 0 and 9")
+	exit()
+elif log_dms not in ["on","off","disabled","enabled","enable","disable"]:
+	print("[ERROR] Please set log_dms to \"on\" or \"off\" or \"enabled\" or \"disabled\" or \"enabled\" or \"disable\"") 
+	exit()
 
 # Bot Instance(s) & Settings
 intents = discord.Intents.default()
@@ -48,7 +60,7 @@ async def send(ctx, *, args:str=None):
 	if args.strip() == None or args.strip() == "":
 		return
 	else:
-		if log_dms.strip().lower() == "true" or log_dms.strip().lower() == "on":
+		if log_dms.strip().lower() in ["on","enabled","true","enable"]:
 			member_count = 0
 			for member in ctx.guild.members:
 				member_count += 1
@@ -56,9 +68,11 @@ async def send(ctx, *, args:str=None):
 			for member in ctx.guild.members:
 				if member == client.user:
 					await ctx.send(f"{member.name} is self, cannot message self :x:")
+					member _count -= 1
 					pass
 				elif member.bot == True:
 					await ctx.send(f"{member.name} is a bot, cannot message a bot :x:")
+					member _count -= 1
 					pass
 				else:
 					try:
@@ -67,9 +81,11 @@ async def send(ctx, *, args:str=None):
 						await asyncio.sleep(delay)
 					except discord.errors.Forbidden:
 						await ctx.send(f"Could not send message to {member.name}, probably DMs Off :x:")
+						member _count -= 1
 						pass
 					except commands.CommandInvokeError:
 						await ctx.send(f"Could not send message to {member.name}, probably DMs Off :x:")
+						member _count -= 1
 						pass
 			await ctx.send(f"DM sent to {member_count} members :white_check_mark:")
 			return
@@ -203,5 +219,5 @@ async def resolve(ctx, error):
 		await ctx.send("Please Mention/Enter A Valid Member")
 		return
 
-# Run Bot - duh!
+# Run Client - duh!
 client.run(token)
