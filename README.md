@@ -74,7 +74,7 @@ Having issues with the bot lately? Join the [Discord Server][discord] where we c
 > This is tool was made for educational purposes and proof of concepts. I'm not accountable for any unlawful, unprecedented action and any violation of ToS administered by a third party.
 
 
-Made with and Python!
+Made with Python!
 
 
 [website]: https://sites.google.com/view/invaderop/home
