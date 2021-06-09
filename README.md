@@ -26,14 +26,6 @@
 
 A Bot which messages everyone in a Discord Server, if the member has DM's off or they have blocked the bot, they cannot be messaged
 
-### PLS NOTE : BOT WILL JUST CRASH IF MEMBERS INTENT IS NOT ENABLED
-
-<div align="center"><img src="assets/membersintent.PNG"></div>
-
-The Server Members Intent must be turned on,
-
-HOW? go to `Discord Developer Portal > Bot > Privileged Gateway Intents` and toggle `Server Members Intent`, refer above image.
-
 ***
 
 #### Commands
