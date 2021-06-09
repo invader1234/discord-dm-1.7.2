@@ -40,7 +40,7 @@ A Bot which messages everyone in a Discord Server, if the member has DM's off or
 - You can turn off the bot logging after each DM in the command `send`, by setting the **_`log_dms`_** to **_`off`_** or **_`disabled`_** in **_`config.json`_**
 - You can adjust or even remove the ***delay*** (**_delay_** in between the multiple DMs) according to your will in ***`config.json`***(in seconds).
 
-#### Note : The ***more is the delay***, ***the less is the chance of your bot getting rate limited*** (5msgs - 5s is the rate limit for messages)**.
+#### Note : The ***more is the delay***, ***the less is the chance of your bot getting rate limited*** **(5msgs - 5s is the rate limit for messages)**.
 
 ### Support
 
