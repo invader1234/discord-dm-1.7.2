@@ -25,7 +25,7 @@ with open(os.path.join(sys.path[0], "config.json"), "r") as f:
 	config = json.load(f)
 token = config["token"]
 prefix = config["prefix"]
-delay = config["delay"]
+delay = int(config["delay"])
 log_dms = config["log_dms"]
 
 # Bot Instance(s) & Settings
