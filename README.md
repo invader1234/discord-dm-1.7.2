@@ -7,16 +7,16 @@
 ### Installation
 
 #### Cloud Host
-> Tutorial uploaded in YouTube, watch it by clicking [here][youtube_tutorial].
+- Tutorial uploaded in YouTube, watch it by clicking [here][youtube_tutorial].
 
 #### Local Host
-> Install [Python 3.9][python_link]
-> During the setup check `Install launcher for all users (recommended)` and `Add Python 3.9 to PATH` when prompted.
-> Clone Repo or Download ZIP & Extract the folder.
-> Now Install dependencies - Run `install.bat`
-> Go to `Discord Developers Page > Bot > Add Bot` and then toggle `Server Members Intent` (refer below image)
-> Add bot credentials to `config.json`
-> Then run `bot.py`
+- Install [Python 3.9][python_link]
+- During the setup check `Install launcher for all users (recommended)` and `Add Python 3.9 to PATH` when prompted.
+- Clone Repo or Download ZIP & Extract the folder.
+- Now Install dependencies - Run `install.bat`
+- Go to `Discord Developers Page > Bot > Add Bot` and then toggle `Server Members Intent` (refer below image)
+- Add bot credentials to `config.json`
+- Then run `bot.py`
 
 
 <div align=center><img src="assets/membersintent.PNG"></div>
