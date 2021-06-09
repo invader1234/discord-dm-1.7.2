@@ -68,11 +68,11 @@ async def send(ctx, *, args:str=None):
 			for member in ctx.guild.members:
 				if member == client.user:
 					await ctx.send(f"{member.name} is self, cannot message self :x:")
-					member _count -= 1
+					member -count -= 1
 					pass
 				elif member.bot == True:
 					await ctx.send(f"{member.name} is a bot, cannot message a bot :x:")
-					member _count -= 1
+					member -count -= 1
 					pass
 				else:
 					try:
