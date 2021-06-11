@@ -55,27 +55,27 @@ async def send(ctx, *, args:str=None):
 			await ctx.send(f"{member_count} members detected, this might take a while")
 			for member in ctx.guild.members:
 				if member == client.user:
-					await ctx.send(f"{member.name} is self, cannot message self :x:")
+					await ctx.send(f":x: {member.name} is self, cannot message self")
 					member_count -= 1
 					pass
 				elif member.bot == True:
-					await ctx.send(f"{member.name} is a bot, cannot message a bot :x:")
+					await ctx.send(f":x: {member.name} is a bot, cannot message a bot")
 					member_count -= 1
 					pass
 				else:
 					try:
 						await member.send(args.strip())
-						await ctx.send(f"Sent message to {member.name} :white_check_mark:")
+						await ctx.send(f":white_check_mark: Sent message to {member.name}")
 						await asyncio.sleep(delay)
 					except discord.errors.Forbidden:
-						await ctx.send(f"Could not send message to {member.name}, probably DMs Off :x:")
+						await ctx.send(f":white_check_mark: Could not send message to {member.name}, probably DMs off")
 						member_count -= 1
 						pass
 					except commands.CommandInvokeError:
-						await ctx.send(f"Could not send message to {member.name}, probably DMs Off :x:")
+						await ctx.send(f":x: Could not send message to {member.name}, probably DMs off")
 						member_count -= 1
 						pass
-			await ctx.send(f"DM sent to {member_count} members :white_check_mark:")
+			await ctx.send(f":white_check_mark: DM sent to {member_count} members")
 			return
 		else:
 			member_count = 0
@@ -97,7 +97,7 @@ async def send(ctx, *, args:str=None):
 						member_count -= 1
 						pass
 
-			await ctx.send(f"DM sent to {member_count} members :white_check_mark:")
+			await ctx.send(f":white_check_mark: DM sent to {member_count} members")
 			return
 
 @client.command(aliases=["idm"]) # You can add more aliases here
