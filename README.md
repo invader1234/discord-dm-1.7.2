@@ -7,7 +7,7 @@
 ### Installation
 
 #### Cloud Host
-- Tutorial uploaded in YouTube, watch it by clicking [here][youtube_tutorial]. (upload pending)
+- Tutorial uploaded in YouTube, watch it by clicking [here][youtube_tutorial].
 
 #### Local Host - Windows
 - Install [Python 3.9][python_link]
@@ -80,5 +80,5 @@ Made with Python!
 [website]: https://sites.google.com/view/invaderop/home
 [discord]: https://discord.gg/CwVJDCH
 [youtube]: https://www.youtube.com/Invader6
-[youtube_tutorial]: https://youtube.com/watch?v=
+[youtube_tutorial]: https://youtu.be/ZwziA5_P4V0
 [python_link]: https://www.python.org/downloads/release/python-395/
