@@ -78,7 +78,7 @@ Made with Python!
 
 
 [website]: https://sites.google.com/view/invaderop/home
-[discord]: https://discord.gg/CwVJDCH
+[discord]: https://discord.gg/XxBv46EtHM
 [youtube]: https://www.youtube.com/Invader6
 [youtube_tutorial]: https://youtu.be/ZwziA5_P4V0
 [python_link]: https://www.python.org/downloads/release/python-395/
