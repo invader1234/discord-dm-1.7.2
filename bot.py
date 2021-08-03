@@ -109,7 +109,7 @@ async def dm(ctx, user:MemberConverter=None, *, args=None):
 		except discord.errors.Forbidden:
 			await ctx.send(f"Could not send messsage to {user.name}#{user.discriminator} :x:")
 			pass
-		except comamnds.CommandInvokeError:
+		except commands.CommandInvokeError:
 			await ctx.send(f"Could not send messsage to {user.name}#{user.discriminator} :x:")
 			pass
 		return
