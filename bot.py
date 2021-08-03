@@ -2,7 +2,7 @@
 *                               *
 *     discord.py Rewrite DM     *
 *        Author: Invader        *
-*     Discord: IПVΛDΣЯ#1195     *
+*     Discord: IПVΛDΣЯ#0006     *
 *                               *
 * * * * * * * * * * * * * * * """
 
