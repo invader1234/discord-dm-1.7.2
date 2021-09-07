@@ -1,6 +1,6 @@
 {
-	"prefix" : "",
-	"token" : "",
-	"delay" : "delay in secs without any unit, for eg: 5",
-	"log_dms" : "enable or disable the logging after each DM"
+	"prefix" : "-",
+	"token" : "Nzk3NTE4NzYzMTYzMzg1OTI2.X_npOg.PoW5GzZGpuGiGgpg2XhyJZBZ2lg",
+	"delay" : "1",
+	"log_dms" : "on"
 }
