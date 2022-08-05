@@ -57,16 +57,6 @@ Having issues with the bot lately? Join the [Discord Server][discord] where we c
 
 </br>
 
-
-
-### Latest YouTube Videos
-
-- [\[DISCORD\] Login To A Bot's Account](https://www.youtube.com/watch?v=Z-S5SvgbmrM)
-- [Fun & Anti Raid Bot | DBM Series E2](https://youtu.be/Cqaxt5GTfuo)
-- [Welcome + Leave Message Bot | DBM SERIES E1](https://youtu.be/gS8Ncj0A-jA)
-- [more videos...](https://youtube.com/invader6)
-
-
 ### Disclaimer
 > This is tool was made for educational purposes and proof of concepts. I'm not accountable for any unlawful, unprecedented action and any violation of ToS administered by a third party.
 
