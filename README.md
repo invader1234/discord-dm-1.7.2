@@ -10,7 +10,7 @@
 - Install [Python 3.9][python_link]
 - During the setup check `Install launcher for all users (recommended)` and `Add Python 3.9 to PATH` when prompted.
 - Download Repository Zip & Extract it.
-- Now Install dependencies - Run `install.bat`
+- Now to Install dependencies - Run `install.bat`
 - Go to `Discord Developers Page > Bot > Add Bot` and then toggle `Server Members Intent` (refer below image), then get bot token
 - Add bot credentials to `config.json`
 - Then run `bot.py`
