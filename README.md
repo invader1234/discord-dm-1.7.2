@@ -51,8 +51,6 @@ Having issues with the bot lately? Join the [Discord Server][discord] where we c
 
 
 ### Contact me:
-[<img align="left" alt="Invader" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
-[<img align="left" alt="Invader | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="Invader | Discord" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/discord.svg" />][discord]
 
 </br>
@@ -63,9 +61,4 @@ Having issues with the bot lately? Join the [Discord Server][discord] where we c
 
 Made with Python!
 
-
-[website]: https://sites.google.com/view/invaderop/home
-[discord]: https://discord.gg/XxBv46EtHM
-[youtube]: https://www.youtube.com/channel/UCDUN4_DWVoYx-ZupD9rhlmw
-[youtube_tutorial]: https://youtu.be/Sogd23Uibd0
 [python_link]: https://www.python.org/downloads/release/python-395/
