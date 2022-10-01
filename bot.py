@@ -2,12 +2,12 @@
 *                               *
 *     discord.py Rewrite DM     *
 *        Author: Invader        *
-*     Discord: IПVΛDΣЯ#0006     *
+*     Discord: invader#7310     *
 *                               *
 * * * * * * * * * * * * * * * """
 
 # Ik most of you guys will just remove the credits stuff. Well, you're free to do so, idec anymore xd.
-# If anyone gets any error or anything unusual, join the discord server or add me IПVΛDΣЯ#1195, we'll figure it out.
+# If anyone encounters any errors by any chance, try and contact me on discord? maybe i'll reply.
 # Enjoy <3
 # -invader
 
